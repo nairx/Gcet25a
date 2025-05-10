@@ -38,6 +38,7 @@ header a{
     background-color: white;
     border-radius: 20px;
     margin: 10px;
+    transition: background-color 1s, transform .5s;
 }
 
 .btn-signup{
@@ -73,4 +74,10 @@ footer {
     background-color: darkgray;
     color:white;
     font-size: large;
+}
+
+.box:hover {
+    border: 5px solid blue;
+    background-color: yellow;
+    transform: scale(1.1,1.1);
 }
