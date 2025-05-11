@@ -4,7 +4,14 @@
 
 .container {
     width: 100%;
-    margin: auto
+    margin: auto;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    height: 100%;
 }
 
 header {
@@ -13,6 +20,8 @@ header {
     background-color: orange;
     color: white;
     padding: 10px;
+    position: sticky;
+    top:0
 }
 
 header li {
@@ -28,12 +37,15 @@ header a{
 .row {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     padding: 20px;
+    min-height: 700px;
+
 }
 
 .box {
-    width: 400px;
+    width: 300px;
     padding: 30px;
     background-color: white;
     border-radius: 20px;
@@ -66,6 +78,7 @@ header a{
 .section-title {
     text-align: center;
     font-size: 40px;
+
 }
 
 footer {
@@ -79,3 +92,8 @@ footer {
 .box:hover {
     transform: scale(1.1,1.1);
 }
+
+#services img {
+    border-radius: 300px;
+}
+
