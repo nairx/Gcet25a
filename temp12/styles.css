@@ -1,0 +1,89 @@
+/*
+h1, h3, p {
+    background-color: orange;
+}
+    */
+
+p {
+    background-color: pink;
+}
+
+p:hover {
+    background-color: yellow;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+div::first-line {
+    background-color: orange;
+}
+
+div::first-letter {
+    font-size: 40px;
+    background-color: blue;
+    color: white
+}
+
+::marker {
+    color: red;
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+a:link {
+    color: white;
+    background-color: teal;
+}
+
+a:visited {
+    color: white;
+    background-color: maroon;
+}
+
+a:active {
+    color: white;
+    background-color: blue;
+}
+
+.box-style {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid gray;
+    background-image: linear-gradient(to right, maroon, white);
+    transition: transform .5s;
+}
+
+.box-style:hover {
+    transform: scaleY(1.1);
+}
+
+
+@keyframes topics {
+    from {
+        left: 0px
+    }
+
+    to {
+        left: 400px
+    }
+}
+
+.box-animation {
+    position: absolute;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    background-color: orange;
+    width: 100px;
+    animation-name: topics;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
