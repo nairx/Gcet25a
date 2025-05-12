@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Temp 14</h1>
+    <h2>Basic JavaScript - Variables</h2>
+    <div id="dvResult"></div>
+    <script>
+      let a = 10;  // let or var
+      var b = 20;
+      const v = 10;
+      var c = a + b + v;
+      //   document.write(c);
+      //alert(c)
+      //console.log(c);
+      dvResult.innerHTML = c
+      a=20;
+      b=30;
+      //v = 50  cannot reassign constant
+      c = a + b
+      console.log(c)
+      console.log(a>b)
+      a=10
+      b=10
+      console.log(a==b)
+      a=20
+      b="20"
+      console.log(a===b)
+      a=30
+      b=70
+      console.log(a!==b)
+      a=1
+      b=5
+      c=3
+      console.log(a>b && a>c)
+      console.log(a>b || a>c)
+      console.log(b>a || c>b)
+      console.log(!(a>b))
+      let x = 10  //Number
+      let name = "John" //String
+      let flag = true  //Boolean
+      let score = null //Object type
+      let email;  //undefined
+      console.log(typeof x)
+      console.log(typeof name)
+      console.log(typeof flag)
+      console.log(typeof score)
+      console.log(typeof email)
+      let rollNum = "423165133"
+      console.log(typeof rollNum)
+      let rNum = Number(rollNum)  //or use parseInt
+      console.log(typeof rNum)
+      let y = 10
+      console.log(typeof y)
+      let z = String(y)
+      console.log(typeof z)
+      let pass = "true"
+      console.log(typeof pass)
+      let result = Boolean(pass)
+      console.log(typeof result)
+    </script>
+  </body>
+</html>
