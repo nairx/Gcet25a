@@ -1,3 +1,9 @@
+let str = "";
+for (let i = 10; i <= 100; i += 10) {
+  str = str + `<option>${i}</option>`;
+}
+n1.innerHTML = str
+
 const add = (a, b) => {
   return a + b;
 };
