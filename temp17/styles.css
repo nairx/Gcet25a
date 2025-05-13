@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.row div {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 5px
+}
+
+#resultDiv {
+    position: fixed;
+    background-color: yellow;
+    left: 100%;
+    /* display:none; */
+    transition: left 1s
+}
+
+#resultDiv:hover {
+    background-color: pink;
+}

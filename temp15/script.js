@@ -40,3 +40,10 @@ while (z < 4) {
   }
   console.log(z);
 }
+
+/////////////ternary operator
+let age = 12
+age > 18 ? console.log("Welcome") : console.log("Not allowed")
+
+let hour = 13
+hour < 12 && console.log("Good Morning")
