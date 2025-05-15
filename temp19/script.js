@@ -58,15 +58,14 @@ const addVeg = () => {
   dispVeg();
 };
 
-const delVeg = () => {
-  //alert(veg);
-  //   arrVeg = arrVeg.filter((value) => value !== veg);
-  //   dispVeg()
+const delVeg = (veg) => {
+    arrVeg = arrVeg.filter((value) => value !== veg);
+    dispVeg()
 };
 const dispVeg = () => {
   let strVeg = "";
   arrVeg.map((value) => {
-    strVeg += `<li>${value}-<button onclick='delVeg(${value}')>Delete</button></li>`;
+    strVeg += `<li>${value}-<button onclick="delVeg('${value}')">Delete</button></li>`;
   });
   lstVeg.innerHTML = strVeg;
 };
