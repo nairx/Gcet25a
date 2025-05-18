@@ -5,5 +5,15 @@ const products = [
 ];
 
 const showProducts = () => {
-  root.innerHTML = "Product List";
+  let str = ""
+  products.map(value=>{
+    str += 
+    `<div>
+      <h3>${value.name}</h3>
+      <h4>${value.price}</h4>
+      <button>Add to Cart</button>
+     </div>
+    `
+  })
+  root.innerHTML = "<div class='row'>" + str + "</div>"
 };
