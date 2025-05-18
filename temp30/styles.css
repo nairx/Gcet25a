@@ -31,3 +31,7 @@ footer {
     background-color: silver;
     padding: 20px;
 }
+
+#root {
+    min-height: 600px;
+}
