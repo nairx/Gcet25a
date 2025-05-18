@@ -4,11 +4,13 @@ const products = [
   { id: 3, name: "p3", price: 75 },
 ];
 
-//spread operator on array - square bracket
+const newProduct = { id: 4, name: "p4", price: 90 };
+
+// //spread operator on array - square bracket
 const newProducts = [...products,newProduct]
 console.log(newProducts)
 
-//spread operator on object - curly bracket
+// //spread operator on object - curly bracket
 const newArr = products.map((value) => ({ ...value, price: value.price + 5 }));
 console.log(newArr);
-const newProduct = { id: 4, name: "p4", price: 70 };
+
