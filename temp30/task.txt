@@ -2,3 +2,5 @@
 2. Provide add to cart button against each products
 3. Display products in box with proper padding and margin
 4. Populate cart object when user clicks on add to cart button
+5. Display cart items when cart link is clicked
+6. Implement + and - button in the cart page to increase and decrease qty
