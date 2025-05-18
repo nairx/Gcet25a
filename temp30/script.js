@@ -12,7 +12,17 @@ const addToCart = (id) => {
   //cart object should be {1:1,3:1}
   // write code here....
   cart[id] = 1;
-  console.log(cart);
+  // console.log(cart);
+};
+
+const increment = (id) => {
+  cart[id] = cart[id] + 1;
+  dispCart()
+};
+
+const decrement = (id) => {
+  cart[id] = cart[id] - 1;
+   dispCart()
 };
 
 const dispCart = () => {
@@ -20,7 +30,12 @@ const dispCart = () => {
   products.map((value) => {
     cart[value.id] &&
       (str += `<div>
-      ${value.name}-${value.price}-<button>-</button>${cart[value.id]}<button>+</button>-${value.price*cart[value.id]}
+      ${value.name}
+      -${value.price}
+      -<button onclick='decrement(${value.id})'>-</button>
+      ${cart[value.id]}
+      <button onclick='increment(${value.id})'>+</button>
+      -${value.price * cart[value.id]}
      </div>
     `);
   });
