@@ -1,3 +1,4 @@
 1. Display all the 3 products
 2. Provide add to cart button against each products
 3. Display products in box with proper padding and margin
+4. Populate cart object when user clicks on add to cart button
