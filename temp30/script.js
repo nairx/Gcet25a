@@ -13,6 +13,10 @@ const addToCart = (id) => {
 
 }
 
+const dispCart = () => {
+  root.innerHTML = "Cart Page"
+}
+
 const showProducts = () => {
   let str = ""
   products.map(value=>{
