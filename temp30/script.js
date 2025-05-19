@@ -11,7 +11,9 @@ const addToCart = (id) => {
   // on box 1 is clicked, then if add button on box 3 is clicked then
   //cart object should be {1:1,3:1}
   // write code here....
-  cart[id] = 1;
+  if (!cart[id]) {
+    cart[id] = 1;
+  }
   // console.log(cart);
 };
 
@@ -47,7 +49,7 @@ const dispCart = () => {
 const dispOrderValue = () => {
   const grandTotal = products.reduce((sum, value) => {
     return sum + value.price * (cart[value.id] ?? 0);
-  },0);
+  }, 0);
   orderValue.innerHTML = `Order Value: ${grandTotal}`;
 };
 
