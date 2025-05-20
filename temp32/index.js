@@ -9,6 +9,15 @@ const validateUser = () => {
   const found = customers.find(
     (value) => value.card == card && value.pin == pin
   );
+  const handleSubmit = () => {
+    let transaction = document.getElementById("transaction").value;
+    let amount = document.getElementById("amount").value;
+    // if (transaction === "Deposit") {
+    //   if (found.balance > amount) {
+    //     customers[found.index]
+    //   }
+    // }
+  };
   console.log(found);
   if (found) {
     let str = `
@@ -20,15 +29,15 @@ const validateUser = () => {
         </select>
       </p>
       <p>
-        <input type='text' placeholder='Enter Amount'>
+        <input type='text' id='amount' placeholder='Enter Amount'>
       </p>
       <p>
-        <button>Submit</button>
+        <button onclick='handleSubmit()'>Submit</button>
       </p>
       <hr>
       <strong>Current Balance:${found.balance}</strong>
       `;
-    root.innerHTML = str
+    root.innerHTML = str;
   } else {
     error.innerHTML = "Invalid Card or Pin";
   }
